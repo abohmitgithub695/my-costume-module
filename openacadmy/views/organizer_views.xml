@@ -1,0 +1,49 @@
+<odoo>
+    <data>
+        <!-- Tree View -->
+        <record id="view_organizer_tree" model="ir.ui.view">
+            <field name="name">event.organizer.tree</field>
+            <field name="model">event.organizer</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="title"/>
+                    <field name="first_name"/>
+                    <field name="last_name"/>
+                    <field name="phone"/>
+                    <field name="email"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Form View -->
+        <record id="view_organizer_form" model="ir.ui.view">
+            <field name="name">event.organizer.form</field>
+            <field name="model">event.organizer</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="title"/>
+                            <field name="first_name"/>
+                            <field name="last_name"/>
+                            <field name="phone"/>
+                            <field name="email"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Action -->
+        <record id="action_organizer" model="ir.actions.act_window">
+            <field name="name">Organizers</field>
+            <field name="res_model">event.organizer</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Menu Item -->
+
+ <menuitem id="menu_event_organizer" name="Organizers" action="action_organizer"  parent="event.event_main_menu"/>
+       
+    </data>
+</odoo>
