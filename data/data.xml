@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="object0" model="care_card_app.care_card_app">
+        <field name="card_no">12</field>
+        <field name="beneficiary">salem</field>
+        <field name="validity_date">2024-10-31</field>  
+        <field name="card_status">active</field>
+        <field name="Card_Balance">232</field>
+        <field name="card_issue_date">2024-10-04</field>  
+        <field name="note">very good care</field>
+    </record>
+
+    <!-- 
+    <record id="object1" model="care_card_app.care_card_app">
+        <field name="beneficiary">Object21 1</field>
+    </record> 
+    -->
+</odoo>
